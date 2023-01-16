@@ -1,4 +1,4 @@
-# Coding-Speed-Quiz
+# Coding-Speed-Quiz :memo: :pencil:
 A cool speed quiz to test your coding knowledge!
 
 
