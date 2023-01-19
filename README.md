@@ -1,5 +1,5 @@
 # Coding-Speed-Quiz :memo: :pencil:
-A cool speed quiz to test your coding knowledge!
+A cool speed quiz to test your javascript knowledge!
 
 
 ## Descritpion 
