@@ -1,4 +1,4 @@
-//DOM elements
+//Ask Dru for help with timer 
 
 // Event listerner to start quiz 
 
@@ -13,7 +13,7 @@ var questions = [
             {text: 'Boolean, String', correct: false}
             {text: 'Symbol, Number, Object', correct: false}
             {text: 'All of the above', correct: true}
-            {text: 'None of the above', correct: false}
+            
         ]
         
     },
@@ -41,7 +41,6 @@ var questions = [
             {text: 'function[]', correct: false}
             {text: '.function', correct: false}
             {text: 'function()', correct: true}
-            {text: 'All of the Above', correct: false}
             {text: 'None of the Above', correct: false}
         ]
     },
@@ -67,9 +66,18 @@ var questions = [
     }
 ]
 
+//DOM items
+
+var startQuiz = document.getElementById('start_quiz');
+var quizChoices = document.getElementById('questions');
+var options = document.getElementById('options')
+
+
 
 //if else conditional statements 
-
+if(document.getElementById('options') correct: true){
+    //ask Dru how to make incorrect buttons turn red?
+}
 
 
 //For loops 
