@@ -41,11 +41,13 @@ var questions = [
 var startBtn = document.getElementById('start');
 var questionsQuiz = document.getElementById('questions');
 var optionsQuiz = document.getElementById('options');
-
+var timeEl = document.getElementById('time')
 
 
 // Variables
 var time = 72;
+var secondsLeft = 10; 
+
 
 
 startBtn.addEventListener("click", function(){
@@ -53,7 +55,22 @@ startBtn.addEventListener("click", function(){
 })
 //console the button works for testing 
 
-//For loops 
+//function displayQuestion(){
+    if(questionsQuiz.isEnded()){
+        showScoers();
+    } else {
+        //show questions
+        var questionElement = document.getElementById('questions');
+        questionElement.innerHTML = questionsQuiz.getQuestionIndex().text;
+//options should be shown 
+        var choices = optionsQuiz.getQuestionIndex().choices;
+//for loops
+        for (var i = 0; i < choices.length; i++){
+            var choiceElement = document.getElementById('choices' + i);
+            choiceElement.innerHTML = choices[i];
+        }
+    }
+
 
 
 //local storage
