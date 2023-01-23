@@ -1,6 +1,9 @@
 *{
     font-family: 'Noto Sans TC', sans-serif;
 }
+.hide {
+    display: none;
+}
 #start-timer{
    display:inline-block;
    justify-content: end;

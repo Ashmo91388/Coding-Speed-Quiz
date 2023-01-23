@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <!--Title for page here-->
     <title>Coding Speed Quiz</title>
 </head>
+
 <body>
     <!--Show High Sores option and timer-->
- <header><button id="view-scores" type="button"> View High Scores </button>
-<div id="start-timer">Time:72s </div>
-</header> 
-<!--Add start of quiz here with button-->
-<main> 
-<div class="main-container">
-<h1>Coding Speed Quiz</h1>
-<p>Try to answer the following code-related questions within the time limit.
- Keep in mind that incorrect answers will penalize your score/time by ten seconds. Good Luck!</p>
-</div>
-</main>
-<p><div class="begin"><button id="button" type="button"> Start Quiz!</buton></p></div>
-<!-- This section will contain the questions -->
-<section id="start_quiz">
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-            <h2 id="questions">Question here placeholder</h2>
-            <!--Ash consider removing html li items refer to JS lines 8 -68, if able to query form ul then remove 5th question in JS-->
-            <div class="options_div" id="options">
-                 <ul class="ul_style">
-                <li class="li_style"><button id="answer1" value="0" type="button">Answer1</button></li>
-                <li class="li_style"><button id="answer1" value="0" type="button">Answer 2</button></li>
-                <li class="li_style"><button id="answer1" value="0" type="button">Answer 3</button></li>
-                <li class="li_style"><button id="answer1" value="0" type="button">Answer 4</button></li>
-            </ul>
-<!--Questions will be generated via Javascript add buttons-->
-    </div></div>
+    <header>
+        <a href="./scores.html"> View High Scores </a>
+        <div id="start-timer">
+            <p>Time: <span id="time">72</span></p>
+        </div>
+    </header>
+    <!--Add start of quiz here with button-->
+    <section class="begin">
+        <div class="main-container">
+            <h1>Coding Speed Quiz</h1>
+            <p>Try to answer the following code-related questions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time by ten seconds. Good Luck!</p>
+        </div>
+        <button id="start" type="button"> Start Quiz!</buton>
+    </section>
 
-    <!--Answer options list from Javascript add buttons -->
 
-<!--Footer-->
+    <!-- This section will contain the questions -->
+    <section class="start-quiz hide">
 
-    <script src="./assets/js/"></script>
+
+        <h2 id="questions">Question here placeholder</h2>
+        <!--Ash consider removing html li items refer to JS lines 8 -68, if able to query form ul then remove 5th question in JS-->
+        <div class="options_div" id="options">
+            <!-- <ul class="ul_style">
+                        <li class="li_style"><button id="answer1" value="0" type="button">Answer1</button></li>
+                        <li class="li_style"><button id="answer1" value="0" type="button">Answer 2</button></li>
+                        <li class="li_style"><button id="answer1" value="0" type="button">Answer 3</button></li>
+                        <li class="li_style"><button id="answer1" value="0" type="button">Answer 4</button></li>
+                    </ul> -->
+            <!--Questions will be generated via Javascript add buttons-->
+        </div>
+
+    </section>
+
+    <section class="end-screen hide">
+        <input type="text">
+        <button>submit</button>
+    </section>
+
+    <!--Footer-->
+
+    <script src="./assets/javascript/script.js"></script>
 </body>
+
 </html>

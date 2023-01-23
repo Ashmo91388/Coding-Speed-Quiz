@@ -7,78 +7,49 @@
 
 var questions = [
     {
-        question: 'What are the data types supported by Javascript?'
-        answer: [
-            {text: 'Undefined, Null', correct: false}
-            {text: 'Boolean, String', correct: false}
-            {text: 'Symbol, Number, Object', correct: false}
-            {text: 'All of the above', correct: true}
-            
-        ]
-        
-    },
-    {
-        question: 'How can you create an Array in Javascript?'
-        answer: [
-            {text: 'var y = [1, 2, 3, 4, 5];', correct: true}
-            {text: 'var y = {1, 2, 3, 4, 5};', correct: false}
-            {text: 'Both A & B', correct: false}
-            {text: 'None of the above', correct: false}
-        ]
-    },
-    {
-        question: 'Which is the assignment operator?'
-        answer: [
-            {text: '/', correct: false}
-            {text: ':', correct: false}
-            {text: ';', correct: false}
-            {text: '=', correct: true}
-        ]
-    },
-    {
-        question: 'How would you execute a callback?'
-        answer: [
-            {text: 'function[]', correct: false}
-            {text: '.function', correct: false}
-            {text: 'function()', correct: true}
-            {text: 'None of the Above', correct: false}
-        ]
-    },
-    {
-        question: '== and === are ____?'
-        answer: [
-            {text: 'methods', correct: false}
-            {text: 'functions', correct: false}
-            {text: 'scopes', correct: false}
-            {text: 'operators', correct: true}
-            {text: 'booleans', correct: false}
-        ]
-    },
-    {
-        question: 'What method is used to output a message to the web, and is typically used for debugging? '
-        answer: [
-            {text: 'console.log', correct: true}
-            {text: 'method.log', correct: false}
-            {text: 'console.log()', correct: false}
-            {text: 'method.log()', correct: false}
-            {text: 'debug.log{}', correct: false}
-        ]
+        question: 'What are the data types supported by Javascript?',
+        choices: ['Undefined, Null','Boolean, String','Symbol, Number, Object','All of the above'],
+        answer: 'All of the above'
+    },{
+        question:  'How can you create an Array in Javascript?',
+        choices: ['var y = [1, 2, 3, 4, 5]', 'var y = {1, 2, 3, 4, 5}', 'Both A & B', 'None of the above' ],
+        answer: 'var y = [1, 2, 3, 4, 5]'
+    
+    },{
+        question: 'Which is the assignment operator?',
+        choices: ['/', ':', ';', '='],
+        answer: '='
+    },{
+        question: 'How would you execute a callback?',
+        choices: ['function[]', '.function', 'function()', 'None of the Above'],
+        answer: 'function()'
+    },{
+        question: '== and === are ______?',
+        choices: ['methods', 'functions','scopes', 'operators'],
+        answer: 'operators'
+    },{
+        question: 'What method is used to output a message to the web, and is typically used for debugging?',
+        choices: ['console.log','method.log','console.log()','method.log()' ],
+        answer: 'console.log()'
+    
     }
 ]
 
+
 //DOM items
 
-var startQuiz = document.getElementById('start_quiz');
-var quizChoices = document.getElementById('questions');
-var options = document.getElementById('options')
+var startBtn = document.getElementById('start');
 
 
+// var quizChoices = document.getElementById('questions');
+// var options = document.getElementById('options');
 
-//if else conditional statements 
-if(document.getElementById('options') correct: true){
-    //ask Dru how to make incorrect buttons turn red?
-}
+// Variables
+var time = 72;
 
+startBtn.addEventListener("click", function(){
+    console.log('The button works')
+})
 
 //For loops 
 
