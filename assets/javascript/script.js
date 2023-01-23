@@ -39,17 +39,19 @@ var questions = [
 //DOM items
 
 var startBtn = document.getElementById('start');
+var questionsQuiz = document.getElementById('questions');
+var optionsQuiz = document.getElementById('options');
 
 
-// var quizChoices = document.getElementById('questions');
-// var options = document.getElementById('options');
 
 // Variables
 var time = 72;
 
+
 startBtn.addEventListener("click", function(){
     console.log('The button works')
 })
+//console the button works for testing 
 
 //For loops 
 
