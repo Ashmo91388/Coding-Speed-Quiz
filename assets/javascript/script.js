@@ -39,9 +39,21 @@ var questions = [
 //DOM items
 
 var startBtn = document.getElementById('start');
-var questionsQuiz = document.getElementById('questions');
+
+
+function showQuestion(questions)//question 
+{
+    var questionsQuiz = document.getElementById('question-title');
+    questionsQuiz.textContent = questions.question-title;
+
+    //selection queries
+   var answer = document.querySelectorAll('.answer')
+   console.log(answer);
+}
+
 var optionsQuiz = document.getElementById('options');
 var timeEl = document.getElementById('time')
+
 
 
 // Variables
@@ -55,21 +67,7 @@ startBtn.addEventListener("click", function(){
 })
 //console the button works for testing 
 
-//function displayQuestion(){
-    if(questionsQuiz.isEnded()){
-        showScoers();
-    } else {
-        //show questions
-        var questionElement = document.getElementById('questions');
-        questionElement.innerHTML = questionsQuiz.getQuestionIndex().text;
-//options should be shown 
-        var choices = optionsQuiz.getQuestionIndex().choices;
-//for loops
-        for (var i = 0; i < choices.length; i++){
-            var choiceElement = document.getElementById('choices' + i);
-            choiceElement.innerHTML = choices[i];
-        }
-    }
+
 
 
 
