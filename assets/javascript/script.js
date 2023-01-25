@@ -60,11 +60,15 @@ var timeEl = document.getElementById('time')
 var time = 72;
 var secondsLeft = 10; 
 
+function beginQuiz(){
+    console.log('The button works');
+    let beginSection = document.querySelector('.begin');
+    beginSection.setAttribute('class', 'hide');
+}
 
+startBtn.addEventListener("click", beginQuiz);
+   
 
-startBtn.addEventListener("click", function(){
-    console.log('The button works')
-})
 //console the button works for testing 
 
 
