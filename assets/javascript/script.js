@@ -60,6 +60,8 @@ var timeEl = document.getElementById('time')
 var time = 72;
 var secondsLeft = 10; 
 let timerID;
+let index = 0;
+let currentQuestion;
 function beginQuiz(){
     console.log('The button works');
     let beginSection = document.querySelector('.begin');
@@ -69,6 +71,15 @@ function beginQuiz(){
 
 timerID=setInterval(timerFunc, 1000);
 timeEl.textContent= time;
+
+showQuestion();
+}
+
+function showQuestion(){
+let currentQuestion= questions[index];
+let questionTitle = document.getElementById('question_div');
+questionTitle.textContent= currentQuestion.question;
+
 }
 function timerFunc(){
     time --; 
