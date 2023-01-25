@@ -80,6 +80,18 @@ let currentQuestion= questions[index];
 let questionTitle = document.getElementById('question_div');
 questionTitle.textContent= currentQuestion.question;
 
+optionsQuiz.innerHTML = '';
+currentQuestion.choices.forEach(function(choice, i){
+    let btn = document.createElement('button');
+    btn.setAttribute('class', 'choice');
+    btn.setAttribute('value', choice);
+    btn.textContent= i+ 1+'. ' + choice;
+    btn.onclick = handleChoice;
+    optionsQuiz.appendChild(btn);
+})
+}
+function handleChoice(){
+    //to be completed
 }
 function timerFunc(){
     time --; 
