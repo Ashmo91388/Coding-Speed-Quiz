@@ -76,7 +76,7 @@ showQuestion();
 }
 
 function showQuestion(){
-let currentQuestion= questions[index];
+currentQuestion= questions[index];
 let questionTitle = document.getElementById('question_div');
 questionTitle.textContent= currentQuestion.question;
 
@@ -91,7 +91,24 @@ currentQuestion.choices.forEach(function(choice, i){
 })
 }
 function handleChoice(){
-    //to be completed
+  if (this.value !== currentQuestion.answer){
+    time -=15;
+    if (time <= 0){
+        time = 0;
+    }
+    timeEl.textContent= time;
+    alert('wrong answer, press ok to continue');
+  }
+  else {
+    alert('correct answer, press ok to continue');
+  }
+  index++;
+  if( index === questions.length){
+    endQuiz();
+  }
+  else {
+    showQuestion();
+  }
 }
 function timerFunc(){
     time --; 

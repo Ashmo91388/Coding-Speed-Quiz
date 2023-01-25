@@ -44,3 +44,7 @@
     margin: 0;
    
 }
+
+.options_div button {
+    display:block;
+}
