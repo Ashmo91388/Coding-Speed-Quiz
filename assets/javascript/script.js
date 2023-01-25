@@ -59,13 +59,28 @@ var timeEl = document.getElementById('time')
 // Variables
 var time = 72;
 var secondsLeft = 10; 
-
+let timerID;
 function beginQuiz(){
     console.log('The button works');
     let beginSection = document.querySelector('.begin');
     beginSection.setAttribute('class', 'hide');
-}
+    let questionDiv = document.querySelector('.start-quiz');
+    questionDiv.removeAttribute('class');
 
+timerID=setInterval(timerFunc, 1000);
+timeEl.textContent= time;
+}
+function timerFunc(){
+    time --; 
+    timeEl.textContent= time;
+
+    if (time <= 0){
+        endQuiz()
+    }
+}
+function endQuiz(){
+    //to be completed
+}
 startBtn.addEventListener("click", beginQuiz);
    
 
