@@ -1,8 +1,3 @@
-//Ask Dru for help with timer 
-
-// Event listerner to start quiz 
-
-
 //Var Questions and answers 
 
 var questions = [
@@ -53,12 +48,14 @@ function showQuestion(questions)//question
 
 var optionsQuiz = document.getElementById('options');
 var timeEl = document.getElementById('time')
+var scorePageEl = document.getElementById('high-score')
 
 
 
 // Variables
 var time = 72;
 var secondsLeft = 10; 
+var scoreEl= 0;
 let timerID;
 let index = 0;
 let currentQuestion;
@@ -121,6 +118,8 @@ function timerFunc(){
 function endQuiz(){
     //to be completed
 }
+
+
 startBtn.addEventListener("click", beginQuiz);
    
 
@@ -132,4 +131,3 @@ startBtn.addEventListener("click", beginQuiz);
 
 //local storage
 
-//ending event listner?? 
