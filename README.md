@@ -14,7 +14,7 @@ I have built a timed quiz to help developers sharpen their coding knowledge. The
 
 
 #### Demo
-![screenshot](./assets/images/JS-quiz.png "JS Quiz Screenshot")
+![screenshot](./assets/images/JS-quiz.png"JS Quiz Screenshot")
 
 ##### Author 
 https://github.com/Ashmo91388
